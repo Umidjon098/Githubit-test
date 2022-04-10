@@ -1,0 +1,250 @@
+.sidebar {
+  min-width: 250px;
+  max-height: 100vh;
+}
+
+.sidebar_header {
+  width: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+  height: 60px;
+  padding: 0px 22px;
+}
+
+.sidebar_header .logo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar_content {
+  overflow-y: auto;
+  max-height: calc(100vh - 102px);
+  margin-top: 8px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  padding: 36px 29px;
+}
+
+.sidebar_content .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.sidebar_content .user .avatar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar_content .user .avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar_content .user_data {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+}
+
+.sidebar_content .user_data .name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sidebar_content .user_data .phone {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.sidebar_content .balance {
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  background: rgba(192, 194, 204, 0.07);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 18px 19px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+.sidebar_content .balance .balance_add {
+  color: #16aa16;
+}
+
+.sidebar_content .balance_count {
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+
+.sidebar_content .balance_count .title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+
+.sidebar_content .balance_count .count {
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.sidebar_content .share-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  width: 100%;
+  background: rgba(242, 97, 16, 0.07);
+  border-radius: 10px;
+  padding: 11px 24px;
+  margin-top: 3px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: #f26110;
+  cursor: pointer;
+}
+
+.sidebar_content .share-btn:hover {
+  background: #f2631031;
+}
+
+.sidebar_content .menu {
+  margin-top: 68px;
+  width: 100%;
+}
+
+.sidebar_content .menu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar_content .menu_item:hover {
+  color: #000;
+  fill: #000;
+}
+
+.sidebar_content .menu_item .name {
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+}
+
+.sidebar_content .menu_bottom .bottom_item {
+  border-top: 1px solid #e6e7eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  padding: 20px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sidebar_content .menu_bottom .bottom_item:hover {
+  color: #000;
+}
+
+.sidebar_content .menu_bottom .bottom_item::after {
+  content: "\003E";
+  position: absolute;
+  right: 0px;
+}
+
+.sidebar_content .menu_bottom :last-child {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1560px) {
+  .sidebar_content .menu_bottom {
+    position: absolute;
+    bottom: 34px;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

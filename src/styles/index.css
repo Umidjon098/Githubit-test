@@ -1,0 +1,103 @@
+@import "../styles/sass/stores";
+@import "../styles/sass/sidebar";
+@import "../styles/sass/header";
+@import "../styles/sass/modal";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+svg {
+  cursor: pointer;
+}
+
+.layout {
+  padding: 15px;
+  width: 100%;
+  min-height: 100vh;
+  background: #eceff3;
+  display: flex;
+  gap: 24px;
+}
+.app-content {
+  width: 100%;
+  max-height: calc(100vh - 30px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@media (min-width: 1560px) {
+  .content {
+    padding: 0 12.5%;
+  }
+}
+.content {
+  margin-top: 10px;
+  max-width: 1920px;
+}
+.card {
+  box-shadow: 2px 0px 2px rgba(223, 226, 235, 0.79);
+  border-radius: 10px;
+}
+.react-calendar {
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  border: none !important;
+  font-family: "Inter";
+  line-height: 1.125em;
+  margin: 40px 0;
+}
+.react-calendar__tile--active {
+  background: #45a524 !important;
+  border-radius: 50%;
+}
+.react-calendar__tile {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 1px solid #f8f8f8 !important;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.react-calendar__tile:hover {
+  border-radius: 50%;
+}
+.react-calendar .react-calendar__tile::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  display: block;
+  background: #ffb800;
+  border-radius: 50%;
+}
+.react-calendar__tile--now {
+  background: #f8f8f8 !important;
+  border-radius: 50%;
+  color: #000000 !important;
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116.3%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.react-calendar__month-view__weekdays abbr {
+  text-transform: none !important;
+  font-family: "Inter";
+  text-decoration: none;
+}

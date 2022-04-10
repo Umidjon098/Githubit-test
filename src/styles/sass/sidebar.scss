@@ -1,0 +1,184 @@
+$primaryColor: rgba(0, 0, 0, 0.5);
+$whiteColor: #ffffff;
+$primaryDarkColor: #000;
+.sidebar {
+  min-width: 250px;
+  max-height: 100vh;
+  &_header {
+    width: 100%;
+    background: $whiteColor;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    height: 60px;
+    padding: 0px 22px;
+    .logo {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -1px;
+      color: $primaryColor;
+    }
+  }
+  &_content {
+    overflow-y: auto;
+    max-height: calc(100vh - 102px);
+    margin-top: 8px;
+    width: 100%;
+    height: 100%;
+    background: $whiteColor;
+    padding: 36px 29px;
+    .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+      .avatar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      &_data {
+        text-align: center;
+        font-family: "Inter";
+        font-style: normal;
+        line-height: 116.3%;
+        letter-spacing: -0.01em;
+        .name {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .phone {
+          font-weight: 400;
+          font-size: 14px;
+          margin-top: 6px;
+        }
+      }
+    }
+    .balance {
+      border: 1px solid rgba(0, 0, 0, 0.02);
+      background: rgba(192, 194, 204, 0.07);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 18px 19px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+      .balance_add {
+        color: #16aa16;
+      }
+      &_count {
+        font-family: "Inter";
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        .title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000;
+        }
+        .count {
+          margin-top: 6px;
+          font-weight: 700;
+          font-size: 20px;
+          color: #000;
+        }
+      }
+    }
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      background: rgba(242, 97, 16, 0.07);
+      border-radius: 10px;
+      padding: 11px 24px;
+      margin-top: 3px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 116.3%;
+      letter-spacing: -0.01em;
+      color: #f26110;
+      cursor: pointer;
+      &:hover {
+        background: #f2631031;
+      }
+    }
+    .menu {
+      margin-top: 68px;
+      width: 100%;
+      &_item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        color: $primaryColor;
+        &:hover {
+          color: $primaryDarkColor;
+          fill: $primaryDarkColor;
+        }
+        .name {
+          font-size: 14px;
+          line-height: 116.3%;
+          letter-spacing: -0.01em;
+        }
+      }
+      &_bottom {
+        .bottom_item {
+          border-top: 1px solid #e6e7eb;
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          padding: 20px 0;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 116.3%;
+          letter-spacing: -0.01em;
+          color: $primaryColor;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $primaryDarkColor;
+          }
+          position: relative;
+          &::after {
+            content: "\003E";
+            position: absolute;
+            right: 0px;
+          }
+        }
+        :last-child {
+          padding-bottom: 0;
+        }
+        @media (min-width: 1560px) {
+          position: absolute;
+          bottom: 34px;
+        }
+      }
+    }
+  }
+}

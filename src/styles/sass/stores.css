@@ -1,0 +1,539 @@
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.banner_left {
+  width: 87%;
+  border: 1px solid rgba(46, 52, 86, 0.15);
+  border-radius: 10px;
+}
+
+.banner .banner_image {
+  position: relative;
+  width: 100%;
+}
+
+.banner .banner_image .bg_img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.banner .banner_image .banner_icon {
+  position: absolute;
+  left: 18px;
+  bottom: -10px;
+  background: rgba(255, 255, 255, 0.58);
+  -webkit-backdrop-filter: blur(24.4645px);
+          backdrop-filter: blur(24.4645px);
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.banner .left_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 33px 22px;
+  position: relative;
+  width: 80%;
+}
+
+.banner .left_footer .footer_logo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.banner .left_footer .footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+.banner .left_footer .circle-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #d0d3db;
+  border-radius: 50%;
+}
+
+.banner .left_footer .raiting {
+  position: absolute;
+  right: -20%;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.banner_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+  width: 13%;
+  min-height: 294.7px;
+  background: #fff;
+  padding: 10px;
+}
+
+.banner_right .menu_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #2e3456;
+  padding: 35px 40px;
+  border-radius: 10px;
+}
+
+.banner_right .menu_shop:hover {
+  background: #2e3456;
+  color: #fff;
+}
+
+.banner_right .menu_shop .shop_title {
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+}
+
+.banner_right .menu_recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 35px 40px;
+  border-radius: 10px;
+}
+
+.banner_right .menu_recipes .recipes_title {
+  color: rgba(46, 52, 86, 0.3);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+}
+
+.banner_right .menu_recipes:hover {
+  background: #2e3456;
+}
+
+.banner_right .menu_recipes:hover svg {
+  color: #fff;
+}
+
+.banner_right .menu_recipes:hover .recipes_title {
+  color: #fff;
+}
+
+.card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 15;
+  margin-bottom: 40px;
+}
+
+.card-section .card {
+  min-width: 250px;
+  height: 150px;
+  display: block;
+  z-index: 15;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-section .card_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: #e4f9ff;
+}
+
+.card-section .card_subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #e4f9ff;
+  margin-top: 6px;
+}
+
+.card-section .card_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  height: 32px;
+  background: #e4f9ff;
+  border-radius: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #2f8cf6;
+  margin-top: 24px;
+}
+
+.card-section .card .image-bg {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+
+.card-section .card_limon {
+  background: #ff7f10;
+}
+
+.card-section .card_tomato {
+  background: #ce3459;
+}
+
+.card-section .card_tomato .text-br {
+  width: 50px;
+}
+
+.card-section .card_spageti {
+  background: #dff850;
+}
+
+.card-section .card_sale {
+  background-color: #2f8cf6;
+}
+
+.card-section .card_sale .custom-bg-text {
+  background: #2f8cf6;
+}
+
+.card-section .card_test {
+  background: #7753f6;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filter_item {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(192, 194, 204, 0.18);
+  border-radius: 10px;
+  padding: 17px 24px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 116.3%;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.filter_item:hover {
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #000000;
+}
+
+.filter .more_select::after {
+  content: "\02C5";
+  margin-left: 10px;
+}
+
+.filter_icon {
+  background: #fff;
+  padding: 15px;
+}
+
+.products {
+  margin-top: 42px;
+}
+
+.products_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products_header .title,
+.products_header .see_all {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.products_header .see_all::after {
+  content: "\003E";
+  margin-left: 16px;
+}
+
+.products_items {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  min-height: 282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+
+.products_items .products_item {
+  position: relative;
+  width: 180px;
+}
+
+.products_items .products_item .precent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  background: #d212351f;
+  border-radius: 50%;
+}
+
+.products_items .products_item .like {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.products_items .products_item .product_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.products_items .products_item .product_img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.products_items .products_item .product_img img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 10px;
+}
+
+.products_items .products_item .add_to_cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products_items .products_item .add_to_cart .price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.products_items .products_item .add_to_cart .add_btn {
+  width: 40px;
+  height: 40px;
+  background: #c0c2cc55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.products_items .products_item .add_to_cart .add_btn::after {
+  content: "\002B";
+  font-size: 24px;
+}
+
+.schedule {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  padding-left: 36px !important;
+}
+
+.schedule::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #45a524;
+  position: absolute;
+  left: 20px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=stores.css.map */
