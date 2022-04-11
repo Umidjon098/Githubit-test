@@ -59,7 +59,7 @@
   font-size: 28px;
   line-height: 16px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: #000;
 }
 
 .banner .left_footer .footer-item {
@@ -76,9 +76,15 @@
   font-size: 14px;
   line-height: 116.3%;
   letter-spacing: -0.01em;
-  color: #000000;
+  color: #000;
   -webkit-text-decoration: dotted;
           text-decoration: dotted;
+}
+
+.banner .left_footer .footer-item .item_name {
+  display: block;
+  border-bottom: 2px dotted #000;
+  padding-bottom: 4px;
 }
 
 .banner .left_footer .circle-dot {
@@ -106,7 +112,7 @@
   font-size: 14px;
   line-height: 116.3%;
   letter-spacing: -0.01em;
-  color: #000000;
+  color: #000;
 }
 
 .banner_right {
@@ -207,7 +213,7 @@
   width: 100%;
   overflow-y: scroll;
   z-index: 15;
-  margin-bottom: 40px;
+  height: 200px;
 }
 
 .card-section .card {
@@ -217,7 +223,19 @@
   z-index: 15;
   padding: 24px;
   position: relative;
-  overflow: hidden;
+}
+
+.card-section .card .shadow_box {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  display: block;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 0;
+  border-radius: 10px;
+  z-index: -1000 !important;
 }
 
 .card-section .card_title {
@@ -227,7 +245,7 @@
   font-size: 22px;
   line-height: 116.3%;
   letter-spacing: -0.01em;
-  color: #e4f9ff;
+  color: #efebffe3;
 }
 
 .card-section .card_subtitle {
@@ -237,7 +255,7 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.01em;
-  color: #e4f9ff;
+  color: #EFEBFF;
   margin-top: 6px;
 }
 
@@ -253,7 +271,7 @@
           align-items: center;
   width: 90px;
   height: 32px;
-  background: #e4f9ff;
+  background: #EFEBFF;
   border-radius: 16px;
   font-family: "Inter";
   font-style: normal;
@@ -262,41 +280,88 @@
   line-height: 18px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #2f8cf6;
   margin-top: 24px;
 }
 
 .card-section .card .image-bg {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -4px;
+}
+
+.card-section .card .image-bg img {
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .card-section .card_limon {
   background: #ff7f10;
+  position: relative;
+}
+
+.card-section .card_limon .shadow_box {
+  -webkit-box-shadow: 0px 35px 33px -20px rgba(255, 127, 16, 0.48);
+          box-shadow: 0px 35px 33px -20px rgba(255, 127, 16, 0.48);
+  background: #ff7f10;
+}
+
+.card-section .card_limon .card_btn {
+  color: #ff7f10;
 }
 
 .card-section .card_tomato {
-  background: #ce3459;
+  background: #f7491e;
 }
 
 .card-section .card_tomato .text-br {
   width: 50px;
 }
 
+.card-section .card_tomato .shadow_box {
+  -webkit-box-shadow: 0px 35px 31px -21px rgba(247, 73, 30, 0.48);
+          box-shadow: 0px 35px 31px -21px rgba(247, 73, 30, 0.48);
+  background: #f7491e;
+}
+
 .card-section .card_spageti {
-  background: #dff850;
+  background: #acc233;
+}
+
+.card-section .card_spageti .card_btn {
+  color: #acc233;
+}
+
+.card-section .card_spageti .shadow_box {
+  -webkit-box-shadow: 0px 35px 31px -21px rgba(172, 194, 51, 0.48);
+          box-shadow: 0px 35px 31px -21px rgba(172, 194, 51, 0.48);
+  background: #acc233;
 }
 
 .card-section .card_sale {
   background-color: #2f8cf6;
 }
 
-.card-section .card_sale .custom-bg-text {
+.card-section .card_sale .card_btn {
+  color: #2f8cf6;
+}
+
+.card-section .card_sale .shadow_box {
+  -webkit-box-shadow: 0px 35px 31px -21px rgba(47, 140, 246, 0.48);
+          box-shadow: 0px 35px 31px -21px rgba(47, 140, 246, 0.48);
   background: #2f8cf6;
 }
 
 .card-section .card_test {
+  background: #7753f6;
+}
+
+.card-section .card_test .card_btn {
+  color: #7753f6;
+}
+
+.card-section .card_test .shadow_box {
+  -webkit-box-shadow: 0px 35px 31px -21px rgba(119, 83, 246, 0.48);
+          box-shadow: 0px 35px 31px -21px rgba(119, 83, 246, 0.48);
   background: #7753f6;
 }
 
@@ -340,7 +405,7 @@
   background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #000000;
+  color: #000;
 }
 
 .filter .more_select::after {
@@ -377,7 +442,7 @@
   font-size: 22px;
   line-height: 16px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: #000;
 }
 
 .products_header .see_all::after {
@@ -438,7 +503,7 @@
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: #000;
 }
 
 .products_items .products_item .product_img {
@@ -484,7 +549,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: #000;
 }
 
 .products_items .products_item .add_to_cart .add_btn {

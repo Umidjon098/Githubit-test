@@ -51,7 +51,7 @@ const Banner = () => {
           <div className="shop_title">Shop</div>
         </div>
         <div className="menu_recipes">
-          <div className="recipes_icon"><Recipes/></div>
+          <div className="recipes_icon"><Recipes /></div>
           <div className="recipes_title">Recipes</div>
         </div>
       </div>

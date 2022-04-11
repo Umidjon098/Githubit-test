@@ -1,4 +1,4 @@
-$primaryColor: #000000;
+$primaryColor: #000;
 
 .banner {
   display: flex;
@@ -43,7 +43,7 @@ $primaryColor: #000000;
       font-size: 28px;
       line-height: 16px;
       letter-spacing: -0.02em;
-      color: #000000;
+      color: $primaryColor;
     }
     .footer-item {
       display: flex;
@@ -55,8 +55,13 @@ $primaryColor: #000000;
       font-size: 14px;
       line-height: 116.3%;
       letter-spacing: -0.01em;
-      color: #000000;
+      color: $primaryColor;
       text-decoration: dotted;
+      .item_name{
+        display: block;
+        border-bottom: 2px dotted $primaryColor;
+        padding-bottom: 4px;
+      }
     }
     .circle-dot {
       display: block;
@@ -78,7 +83,7 @@ $primaryColor: #000000;
       font-size: 14px;
       line-height: 116.3%;
       letter-spacing: -0.01em;
-      color: #000000;
+      color: $primaryColor;
     }
   }
   &_right {
@@ -146,8 +151,7 @@ $primaryColor: #000000;
   width: 100%;
   overflow-y: scroll;
   z-index: 15;
-  margin-bottom: 40px;
-
+  height: 200px;
   .card {
     min-width: 250px;
     height: 150px;
@@ -155,7 +159,17 @@ $primaryColor: #000000;
     z-index: 15;
     padding: 24px;
     position: relative;
-    overflow: hidden;
+  .shadow_box {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    display: block;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    border-radius: 10px;
+    z-index: -1000 !important;
+  }
     &_title {
       font-family: "Inter";
       font-style: normal;
@@ -163,7 +177,7 @@ $primaryColor: #000000;
       font-size: 22px;
       line-height: 116.3%;
       letter-spacing: -0.01em;
-      color: #e4f9ff;
+      color: #efebffe3;
     }
     &_subtitle {
       font-family: "Inter";
@@ -172,7 +186,7 @@ $primaryColor: #000000;
       font-size: 14px;
       line-height: 18px;
       letter-spacing: -0.01em;
-      color: #e4f9ff;
+      color: #EFEBFF;
       margin-top: 6px;
     }
     &_btn {
@@ -181,7 +195,7 @@ $primaryColor: #000000;
       align-items: center;
       width: 90px;
       height: 32px;
-      background: #e4f9ff;
+      background: #EFEBFF;
       border-radius: 16px;
       font-family: "Inter";
       font-style: normal;
@@ -190,36 +204,70 @@ $primaryColor: #000000;
       line-height: 18px;
       letter-spacing: -0.01em;
       text-transform: uppercase;
-      color: #2f8cf6;
       margin-top: 24px;
     }
     .image-bg {
       position: absolute;
       right: 0;
-      bottom: -5px;
+      bottom: -4px;
+      img {
+      z-index: -1;
+      border-radius: 10px;
+      }
     }
   }
   .card_limon {
     background: #ff7f10;
+    position: relative;
+    .shadow_box{
+      box-shadow: 0px 35px 33px -20px rgba(255, 127, 16, 0.48);
+      background: #ff7f10;
+    }
+    .card_btn{
+      color: #ff7f10;
+    }
   }
   .card_tomato {
-    background: #ce3459;
+    background: #f7491e;
     .text-br {
       width: 50px;
     }
+    .shadow_box {
+      box-shadow: 0px 35px 31px -21px rgba(247, 73, 30, 0.48);
+      background: #f7491e;
+    }
   }
   .card_spageti {
-    background: #dff850;
+    background: #acc233;
+    .card_btn {
+        color: #acc233;
+    }
+      .shadow_box {
+        box-shadow:0px 35px 31px -21px rgba(172, 194, 51, 0.48);
+        background: #acc233;
+      }
   }
   .card_sale {
     background-color: #2f8cf6;
-    .custom-bg-text {
+    .card_btn {
+      color: #2f8cf6;
+    }
+    .shadow_box {
+      box-shadow: 0px 35px 31px -21px rgba(47, 140, 246, 0.48);
       background: #2f8cf6;
     }
   }
   .card_test {
     background: #7753f6;
+    .card_btn {
+      color: #7753f6;
+    }
+      .shadow_box {
+        box-shadow: 0px 35px 31px -21px rgba(119, 83, 246, 0.48);
+        background: #7753f6;
+      }
   }
+
 }
 
 .filter {
@@ -246,7 +294,7 @@ $primaryColor: #000000;
     &:hover {
       background: #fff;
       transition: all 0.3s ease;
-      color: #000000;
+      color: $primaryColor;
     }
   }
   .more_select {
@@ -274,7 +322,7 @@ $primaryColor: #000000;
       font-size: 22px;
       line-height: 16px;
       letter-spacing: -0.02em;
-      color: #000000;
+      color: $primaryColor;
     }
     .see_all {
       &::after {
@@ -319,7 +367,7 @@ $primaryColor: #000000;
         font-size: 14px;
         line-height: 28px;
         letter-spacing: -0.02em;
-        color: #000000;
+        color: $primaryColor;
       }
       .product_img {
         width: 100%;
@@ -347,7 +395,7 @@ $primaryColor: #000000;
           font-size: 20px;
           line-height: 28px;
           letter-spacing: -0.02em;
-          color: #000000;
+          color: $primaryColor;
         }
         .add_btn {
           width: 40px;
