@@ -124,7 +124,10 @@ $primaryDarkColor: #000;
     .menu {
       margin-top: 68px;
       width: 100%;
+
       &_item {
+        animation: fadeInUp;
+        animation-duration: 2s;
         display: flex;
         align-items: center;
         gap: 24px;

@@ -60,24 +60,6 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-.schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 352px;
-  height: 48px;
-  background: #f8f8f8;
-  border-radius: 10px;
-  padding: 0 16px;
-  margin-bottom: 6px;
-}
-
 .modal.active {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;

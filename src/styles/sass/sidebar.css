@@ -176,6 +176,10 @@
 }
 
 .sidebar_content .menu_item {
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
