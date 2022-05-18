@@ -26,10 +26,11 @@ svg {
   gap: 24px;
 }
 .app-content {
-  width: 100%;
-  max-height: calc(100vh - 30px);
-  overflow: hidden;
-  overflow-y: scroll;
+  width: calc(100% - 250px);
+  min-height: calc(100vh - 30px);
+  margin-left: 274px;
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
 }
 @media (min-width: 1560px) {
   .content {

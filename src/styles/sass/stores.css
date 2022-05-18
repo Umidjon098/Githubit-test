@@ -577,6 +577,41 @@
   font-size: 24px;
 }
 
+.products_items .products_item[data-scroll="in"]:nth-child(1) {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.products_items .products_item[data-scroll="in"]:nth-child(2) {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.products_items .products_item[data-scroll="in"]:nth-child(3) {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.products_items .products_item[data-scroll="in"]:nth-child(4) {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.products_items .products_item[data-scroll="in"]:nth-child(5) {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
 .schedule {
   position: relative;
   display: -webkit-box;

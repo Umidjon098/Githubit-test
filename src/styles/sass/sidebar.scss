@@ -2,6 +2,7 @@ $primaryColor: rgba(0, 0, 0, 0.5);
 $whiteColor: #ffffff;
 $primaryDarkColor: #000;
 .sidebar {
+  position: fixed;
   min-width: 250px;
   max-height: 100vh;
   &_header {
@@ -25,7 +26,7 @@ $primaryDarkColor: #000;
   }
   &_content {
     overflow-y: auto;
-    max-height: calc(100vh - 102px);
+    max-height: calc(100vh - 92px);
     margin-top: 8px;
     width: 100%;
     height: 100%;

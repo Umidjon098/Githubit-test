@@ -1,7 +1,23 @@
+import { useEffect } from "react";
 import { Heart, Percent, PlusCircle } from "../../../assets/icon";
 import { images } from "../../../constants/images";
+import ScrollOut from "scroll-out";
 
 const Products = () => {
+  useEffect(() => {
+    let s = ScrollOut({
+      threshold: 0,
+      cssProps: {
+        visibleY: true,
+        viewportY: true,
+      },
+    });
+    return () => {
+      console.log("hi");
+      s.teardown();
+    };
+  }, []);
+
   return (
     <div className="products">
       <div className="products_header">
@@ -9,7 +25,7 @@ const Products = () => {
         <div className="see_all">See all</div>
       </div>
       <div className="products_items card">
-        <div className="products_item">
+        <div data-scroll className="products_item">
           <div className="precent">
             <Percent />
           </div>
@@ -25,7 +41,7 @@ const Products = () => {
             <div className="add_btn"></div>
           </div>
         </div>
-        <div className="products_item">
+        <div data-scroll className="products_item">
           <div className="precent">
             <Percent />
           </div>
@@ -41,7 +57,7 @@ const Products = () => {
             <div className="add_btn"></div>
           </div>
         </div>
-        <div className="products_item">
+        <div data-scroll className="products_item">
           <div className="precent">
             <Percent />
           </div>
@@ -57,7 +73,7 @@ const Products = () => {
             <div className="add_btn"></div>
           </div>
         </div>
-        <div className="products_item">
+        <div data-scroll className="products_item">
           <div className="precent">
             <Percent />
           </div>
@@ -73,7 +89,7 @@ const Products = () => {
             <div className="add_btn"></div>
           </div>
         </div>
-        <div className="products_item">
+        <div data-scroll className="products_item">
           <div className="precent">
             <Percent />
           </div>
